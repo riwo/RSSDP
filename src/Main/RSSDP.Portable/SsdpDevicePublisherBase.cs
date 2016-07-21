@@ -131,7 +131,7 @@ USN: {1}
 
 			_DeviceValidator.ThrowIfDeviceInvalid(device);
 
-			TimeSpan minCacheTime;
+			TimeSpan minCacheTime = TimeSpan.Zero;
 			bool wasAdded = false;
 			lock (_Devices)
 			{
@@ -173,7 +173,7 @@ USN: {1}
 			ThrowIfDisposed();
 
 			bool wasRemoved = false;
-			TimeSpan minCacheTime;
+			TimeSpan minCacheTime = TimeSpan.Zero;
 			lock (_Devices)
 			{
 				if (_Devices.Contains(device))
