@@ -37,11 +37,6 @@
     <DocumentationFile>bin\Release\Rssdp.Portable.XML</DocumentationFile>
     <RunCodeAnalysis>true</RunCodeAnalysis>
   </PropertyGroup>
-  <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
-    <SignAssembly Condition="$(DefineConstants.Contains('DEBUG'))">false</SignAssembly>
-    <AssemblyOriginatorKeyFile>$(SolutionDir)Riwo.Common\RIWO.snk</AssemblyOriginatorKeyFile>
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
